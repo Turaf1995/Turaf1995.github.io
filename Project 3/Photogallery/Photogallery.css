@@ -1,0 +1,197 @@
+body {
+    font-family:'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-image: url(../Index/IndexImages/background.jpg);
+    background-repeat:repeat-y;
+    color: #333333;
+    margin: 0;
+  }
+
+
+.header {
+    height: 15vh;
+    background-size: cover;
+}
+
+.header-line {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, black 20%, rgb(204,223,237) 70%);
+    
+}
+
+
+.button-nav {
+  color: rgb(255, 255, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 450;
+  font-size: 14px;
+  background: rgb(35, 32, 32);
+  margin-right: 40px;
+  transition: all 0,3s ease;
+  width:110px; height:20px; 
+  background:black; 
+  -moz-box-shadow:0 0 15px rgb(254,133,78); 
+  -webkit-box-shadow:0 0 10px hite; 
+  box-shadow:0 0 15px rgb(254,133,78);
+}
+
+
+.button-nav1 {
+  color: rgb(255, 255, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 450;
+  font-size: 14px;
+  background: rgb(35, 32, 32);
+  margin-right: 40px;
+  transition: all 0,3s ease;
+  width:110px; height:20px; 
+  background:black; 
+  -moz-box-shadow:0 0 25px rgb(255, 0, 0); 
+  -webkit-box-shadow:0 0 10px hite; 
+  box-shadow:0 0 25px rgb(255, 0, 0);
+}
+
+.button-nav:hover {
+  background: rgb(229, 124, 68);
+}
+
+.button-nav1:hover {
+  background: rgb(137, 0, 0);
+}
+
+.header-logo {
+    text-decoration: none;
+    margin-right: 270px;
+    margin-left: 20px;
+   
+}
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0;
+    animation-duration: 2s;
+    animation-name: slidein1;
+    animation-iteration-count:1;
+  }
+    @keyframes slidein1 {
+      from {
+        margin-top: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-top: 0%;
+        width: 100%;
+      }
+      
+  }
+  
+  main > h2 {
+    text-align: center;
+    font-size: 25px;
+    color:gray;
+    font-style: oblique;
+    font-weight: 300;
+    animation-duration: 3s;
+    animation-name: slidein2;
+    animation-iteration-count:1;
+  }
+    @keyframes slidein2 {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+      75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+    }
+
+  
+    .container {
+      width: 100%; /* ширина блока-контейнера */
+      max-width: 960px; /* максимальная ширина контейнера */
+      margin: 0 auto; /* этот стиль центрирует контейнер */
+      
+  }
+  .photo {
+      float:left; /* говорим элементам выстраиваться один за другим */
+      width: 25%; /* устанавливаем ширину элемента */
+      padding: 10px; /* добавляем отступы с каждой стороны */
+      box-sizing: border-box; /* меняем способ вычисления ширины */
+  }
+  .photo img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #eee;
+    box-sizing: border-box;
+}
+.photo a:hover {
+  opacity: 0.5;
+}
+.photo a {
+  display: block;
+  position: relative;
+}
+.photo a:after {
+  content: '';
+  background: transparent url(img/icons/eye-icon.png) no-repeat center;
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+.photo:hover > a:after {
+  visibility: visible;
+}
+.photo figcaption {
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+}
+#gallery {
+  margin-bottom: 50px;
+}
+#gallery:after { 
+  content: '';
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+  .footer-about {
+    color:gray;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+  }
+
+  .socials {
+    text-align: center;
+    list-style-type: none;
+    
+  }
+.social-element {
+  display: inline;
+
+}
+  .social-element__link {
+    text-decoration: none;
+    color:blue;
+
+  }
